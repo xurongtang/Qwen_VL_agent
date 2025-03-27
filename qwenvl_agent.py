@@ -65,7 +65,7 @@ def perform_gui_grounding_with_api(screenshot_path, user_query, model_id, min_pi
     base64_image = encode_image(screenshot_path)
     client = OpenAI(
         # If the environment variable is not configured, please replace the following line with the Dashscope API Key: api_key="sk-xxx". Access via https://bailian.console.alibabacloud.com/?apiKey=1 "
-        api_key="sk-dfb22b55340145a69a20587cfa2737ac",
+        api_key="xxx",
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
     resized_height, resized_width = smart_resize(
